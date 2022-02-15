@@ -1,6 +1,7 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../styles/Home.module.css'
+import Head from "next/head";
+import Image from "next/image";
+import Link from "next/link";
+import styles from "../styles/Home.module.css";
 
 export default function Home() {
   return (
@@ -13,42 +14,73 @@ export default function Home() {
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
+          Facilities & Property Management KSI Reports
         </h1>
 
         <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
+          Get started by selecting a shop from the options below
         </p>
 
         <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h2>Documentation &rarr;</h2>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
+          <h2 className={styles.card}>
+            <Link href="/shops/bldgmaint">
+              <a>Bldg Maint</a>
+            </Link>
+          </h2>
 
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h2>Learn &rarr;</h2>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
+          <h2 className={styles.card}>
+            <Link href="/shops/construction">
+              <a>Construction</a>
+            </Link>
+          </h2>
 
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h2>Examples &rarr;</h2>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
+          <h2 className={styles.card}>
+            <Link href="/shops/electrical">
+              <a>Electrical</a>
+            </Link>
+          </h2>
 
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h2>Deploy &rarr;</h2>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
+          <h2 className={styles.card}>
+            <Link href="/shops/energymgmt">
+              <a>Energy Mgmt</a>
+            </Link>
+          </h2>
+
+          <h2 className={styles.card}>
+            <Link href="/shops/housing">
+              <a>Housing</a>
+            </Link>
+          </h2>
+
+          <h2 className={styles.card}>
+            <Link href="/shops/landscaping">
+              <a>Landscaping</a>
+            </Link>
+          </h2>
+
+          <h2 className={styles.card}>
+            <Link href="/shops/locksmith">
+              <a>Locksmith</a>
+            </Link>
+          </h2>
+
+          <h2 className={styles.card}>
+            <Link href="/shops/plumbing">
+              <a>Plumbing</a>
+            </Link>
+          </h2>
+
+          <h2 className={styles.card}>
+            <Link href="/shops/systems">
+              <a>Systems</a>
+            </Link>
+          </h2>
+
+          <h2 className={styles.card}>
+            <Link href="/shops/zone">
+              <a>Zone</a>
+            </Link>
+          </h2>
         </div>
       </main>
 
@@ -58,12 +90,12 @@ export default function Home() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Powered by{' '}
+          Powered by{" "}
           <span className={styles.logo}>
             <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
           </span>
         </a>
       </footer>
     </div>
-  )
+  );
 }

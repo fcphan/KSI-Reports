@@ -1,9 +1,10 @@
 .container {
-  padding: 0 2rem;
+  width: 100%;
+  padding: 2rem;
 }
 
 .main {
-  min-height: 100vh;
+  min-height: 10vh;
   padding: 4rem 0;
   flex: 1;
   display: flex;
@@ -47,6 +48,10 @@
 
 .title,
 .description {
+  text-align: center;
+}
+
+.chartTitle {
   text-align: center;
 }
 
@@ -104,8 +109,69 @@
 }
 
 .logo {
-  height: 1em;
-  margin-left: 0.5rem;
+  padding: 1rem;
+}
+
+.onTop {
+  z-index: 100 !important;
+}
+.customTooltip {
+  display: relative;
+  width: fit-content;
+  height: fit-content;
+  padding: 10px;
+  background-color: white;
+  border: 2px solid grey;
+  fill-opacity: 20%;
+}
+
+.label {
+  position: absolute;
+  z-index: 1000 !important;
+}
+
+.btn {
+  margin: 1rem;
+  padding: 1rem;
+}
+
+.btngroup {
+  display: flex;
+  justify-content: center;
+}
+
+.customTooltip > p {
+  color: black;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbarcollapse {
+  justify-content: flex-end;
+}
+
+.navmenu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navitem {
+  padding: 0.5rem;
+}
+
+.navlink {
+  font-size: 1rem;
+  color: white;
+  white-space: nowrap;
+}
+
+.navlogo {
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 
 @media (max-width: 600px) {
